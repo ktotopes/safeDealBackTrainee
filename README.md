@@ -32,7 +32,6 @@
 
 |      Name |  Param   | Value  | Description                             |
 |----------:|:--------:|:-------|:----------------------------------------|
-| API TOKEN |   [key]  | string | Secret key for using our api            |
 |    ACTION | [action] | string | What do you want to do                  |
 
 #### Example:
