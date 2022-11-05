@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
     {
         RateLimiter::for('limitApi', function (Request $request) {
             return Limit::perMinute(10)->response(function () {
-               return new \Illuminate\Http\Response('idi nahui chyrka');
+               return new \Illuminate\Http\Response('boop beep a lot of requests ');
             });
         });
     }
