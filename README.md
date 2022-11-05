@@ -32,7 +32,7 @@
 
 |      Name |  Param   | Value  | Description                             |
 |----------:|:--------:|:-------|:----------------------------------------|
-|    ACTION | [action] | string | What do you want to do                  |
+|    ACTION | [orders] | string | What do you want to do                  |
 
 #### Example:
 
@@ -75,7 +75,7 @@
 
 |     Name |  Param   | Value   | Description            |
 |---------:|:--------:|:--------|:-----------------------|
-|   ACTION | [action] | string  | What do you want to do |
+|   ACTION | [orders] | string  | What do you want to do |
 | Order ID | [order]  | integer | -                      |
 
 #### Example:
@@ -112,7 +112,7 @@
 
 |   Name |  Param   | Value   | Description                                    |
 |-------:|:--------:|:--------|:-----------------------------------------------|
-| ACTION | [action] | string  | What do you want to do                         |
+| ACTION | [orders] | string  | What do you want to do                         |
 |   name |  [name]  | string  | Username                                            |
 |  price | [price]  | integer | user order price                                               |
 |  count | [count]  | integer | number of items ordered                  |
@@ -146,10 +146,10 @@
 
 ### Delivery price
 
-|             Name |  Param   | Value  | Description                  |
-|-----------------:|:--------:|:-------|:-----------------------------|
-|           ACTION | [action] | string | What do you want to do       |
-| Delivery address |  [name]  | string | delivery address to the user |
+|             Name |      Param       | Value  | Description                  |
+|-----------------:|:----------------:|:-------|:-----------------------------|
+|           ACTION | [delivery-price] | string | What do you want to do       |
+| Delivery address |      [name]      | string | delivery address to the user |
 
 #### Example:
 
