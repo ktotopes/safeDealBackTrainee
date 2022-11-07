@@ -2,8 +2,6 @@
 
 # Api information
 
-#### Api token 5iV0pn4PwQzZXHzv9gJ2cW0M2gwPh73TOFYQa5oF
-
 |    Обозначение |                   Описание                   |
 |---------------:|:--------------------------------------------:|
 |    HTTP Method |                     GET                      |
@@ -30,10 +28,6 @@
 
 ### Order list
 
-|      Name |  Param   | Value  | Description                             |
-|----------:|:--------:|:-------|:----------------------------------------|
-|    ACTION | [orders] | string | What do you want to do                  |
-
 #### Example:
 
 **http://safedeal.test/api/v1/orders**
@@ -42,8 +36,7 @@
 
 ```html
 
-<form action="http://safedeal.test/api/v1" method="GET">
-    <input type="text" name="action" value="orders">
+<form action="http://safedeal.test/api/v1/orders" method="GET">
     <input type="submit">
 </form>
 ```
@@ -75,7 +68,6 @@
 
 |     Name |  Param   | Value   | Description            |
 |---------:|:--------:|:--------|:-----------------------|
-|   ACTION | [orders] | string  | What do you want to do |
 | Order ID | [order]  | integer | -                      |
 
 #### Example:
@@ -86,8 +78,7 @@
 
 ```html
 
-<form action="http://safedeal.test/api/v1" method="POST">
-    <input type="hidden" name="action" value="orders">
+<form action="http://safedeal.test/api/v1/orders" method="POST">
     <input type="text" name="order">
     <input type="submit">
 </form>
@@ -112,10 +103,9 @@
 
 |   Name |  Param   | Value   | Description                                    |
 |-------:|:--------:|:--------|:-----------------------------------------------|
-| ACTION | [orders] | string  | What do you want to do                         |
-|   name |  [name]  | string  | Username                                            |
-|  price | [price]  | integer | user order price                                               |
-|  count | [count]  | integer | number of items ordered                  |
+|   name |  [name]  | string  | Username                                       |
+|  price | [price]  | integer | user order price                               |
+|  count | [count]  | integer | number of items ordered                        |
 
 #### Example:
 
@@ -125,8 +115,7 @@
 
 ```html
 
-<form action="http://safedeal.test/api/v1" method="POST">
-    <input type="hidden" name="action" value="orders">
+<form action="http://safedeal.test/api/v1/orders" method="POST">
     <input type="text" name="name">
     <input type="text" name="price">
     <input type="text" name="count">
@@ -148,7 +137,6 @@
 
 |             Name |      Param       | Value  | Description                  |
 |-----------------:|:----------------:|:-------|:-----------------------------|
-|           ACTION | [delivery-price] | string | What do you want to do       |
 | Delivery address |      [name]      | string | delivery address to the user |
 
 #### Example:
@@ -159,8 +147,7 @@
 
 ```html
 
-<form action="http://safedeal.test/api/v1" method="POST">
-    <input type="hidden" name="action" value="delivery-price">
+<form action="http://safedeal.test/api/v1/delivery-price" method="POST">
     <input type="text" name="delivery_address">
     <input type="submit">
 </form>
